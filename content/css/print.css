@@ -18,7 +18,7 @@
     }
     
     
-    .main-infos, .abilities, .header h3, .items, .skills-injuries{
+    .main-infos, .abilities, .header h3, .items, .skills-injuries, .small-caps{
     font-variant:small-caps;
     color: rgba(0,0,0,0.75);
     }
@@ -111,3 +111,9 @@ font-size: 18px;
  }
     
     
+    
+    .logo-img {
+    height: 40px;
+position: relative;
+top: -2px;
+    }
