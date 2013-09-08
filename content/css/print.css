@@ -111,6 +111,9 @@ font-size: 18px;
  }
     
     
+    .small-caps .details  {
+    font-variant: normal;
+    }
     
     .logo-img {
     height: 40px;
