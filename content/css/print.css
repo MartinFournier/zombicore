@@ -1,0 +1,113 @@
+    .text-write {
+      border-bottom: 1px solid rgba(0,0,0,0.75);
+      height: 20px;
+    }
+    
+    .text-write.center {
+    text-align:center;
+    }
+    
+    label.field-prepend {
+      display: block;
+      text-align:right;
+      font-size:12px;
+    }
+    
+    .main-infos {
+  
+    }
+    
+    
+    .main-infos, .abilities, .header h3, .items, .skills-injuries{
+    font-variant:small-caps;
+    color: rgba(0,0,0,0.75);
+    }
+    
+    .text-write {
+      font-variant: normal;
+    }
+    
+    .abilities label {
+    font-size: 16px;
+line-height: 34px;
+text-align: center;
+display: block;
+    }
+    
+    .ability-box {
+    height: 40px;
+    text-align:center;
+    font-variant: normal;
+    border: 1px solid rgba(0,0,0,0.75);
+    border-bottom-width: 0;
+    font-size: 24px;
+
+padding: 3px;
+font-weight: bold;
+    }
+    
+    .skills-injuries {
+    page-break-after:always
+    }
+    
+    .abilities .ability-row:last-child .ability-box
+    {
+    border-bottom-width: 1px;
+    }
+    
+    .parent-height {
+    height: 160px;
+    }
+    .big-cell  {
+    
+    height: 100%;
+border: 1px solid rgba(0,0,0,0.75);
+    }
+    
+    .item-name .cell, .injury .cell{
+    line-height: 54px;
+font-size: 18px;
+    }
+    
+    .item-qty .cell  {
+    text-align: center;
+    }
+    
+    .items  .cell, .skills-injuries  .cell, .injury .cell {
+      height: 40px;
+      border-bottom: 1px solid rgba(0,0,0,0.75);
+    }
+  
+    
+    .no-right-pad {
+    padding-right: 0;
+    }
+    
+    .no-left-pad {
+    padding-left: 0;
+    }
+    
+    .skill-rank  .cell, .item-qty  .cell{
+      border-left: 1px solid rgba(0,0,0,0.75);
+      margin-top: 20px;
+      height: 20px;
+    }
+    
+    .notes-box {
+    border: 1px solid rgba(0,0,0,0.75);
+    height: 200px;
+    }
+ 
+ 
+ @media print {
+ .header h3 {
+ font-size: 42px;
+ margin-top: 0;
+ 
+ }
+ .header {
+ border-bottom: none !important;
+ }
+ }
+    
+    
