@@ -6,127 +6,115 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="content/img/favicon.png">
-    <title>Zombicore</title>
+    <title>Zombicore - Character Sheet</title>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="content/css/print.css" rel="stylesheet">
     <link href="content/libs/bootstrap/css/jumbotron.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right  hidden-print">
+      <div class="header hidden-print">
+        <ul class="nav nav-pills pull-right">
           <li><a href="index.html"><span class="glyphicon glyphicon-info-sign"></span>Rules</a></li>
           <li class="active"><a href="sheet.html"><span class="glyphicon glyphicon-user"></span>Sheet</a></li>
           <!--<li><a href="tools.html"><span class="glyphicon glyphicon-briefcase"></span>Tools</a></li>-->
         </ul>
         <h3 class="text-muted">
-        <img src="content/img/favicon.png" class="logo-img" />
-        Zombicore Character Sheet</h3>
+          <img src="content/img/favicon.png" class="logo-img" />
+          Zombicore Character Sheet
+        </h3>
       </div>
       <div class="main-infos">
-      <div class="row">
-        <div class="col-xs-12">
-          <h3>Character Information</h3>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3 class="hidden-print">
+              Character Information
+            </h3>
+            <h3 class="visible-print margined-bottom">
+              <img src="content/img/favicon.png" class="logo-img margined" />
+              Zombicore Character Information
+            </h3>
+          </div>
         </div>
-      </div>
         <div class="row">
           <div class="col-xs-2">
             <label class="field-prepend">Character Name</label>
           </div>
           <div class="col-xs-6">
-            <div class="text-write" contenteditable="true"></div>
+            <div class="text-write"></div>
           </div>
           <div class="col-xs-2">
             <label class="field-prepend">Age</label>
           </div>
           <div class="col-xs-2">
-            <div class="text-write center" contenteditable="true"></div>
+            <div class="text-write center"></div>
           </div>
         </div>
-         <div class="row">
+        <div class="row">
           <div class="col-xs-2">
             <label class="field-prepend">Profession</label>
           </div>
           <div class="col-xs-6">
-            <div class="text-write" contenteditable="true"></div>
+            <div class="text-write"></div>
           </div>
           <div class="col-xs-2">
             <label class="field-prepend">Height</label>
           </div>
           <div class="col-xs-2">
-            <div class="text-write center" contenteditable="true"></div>
+            <div class="text-write center"></div>
           </div>
         </div>
-         <div class="row">
+        <div class="row">
           <div class="col-xs-2">
             <label class="field-prepend">Player</label>
           </div>
           <div class="col-xs-6">
-            <div class="text-write" contenteditable="true"></div>
+            <div class="text-write"></div>
           </div>
           <div class="col-xs-2">
             <label class="field-prepend">Weight</label>
           </div>
           <div class="col-xs-2">
-            <div class="text-write center" contenteditable="true"></div>
+            <div class="text-write center"></div>
           </div>
         </div>
       </div>
       <div class="abilities">
         <div class="row">
-            <div class="col-xs-6">
-              <h3>Abilities</h3>
+           <div class="col-xs-4">
+              <h3 class="text-center cell-header">Health & Injuries</h3>
+            </div>
+           <div class="col-xs-2">
+              <h3 class="text-center cell-header">Sanity</h3>
             </div>
             <div class="col-xs-2">
-              <h3 class="text-center cell-header">XP</h3>
+              <h3 class="text-center cell-header">Thirst</h3>
             </div>
             <div class="col-xs-2">
               <h3 class="text-center cell-header">Hunger</h3>
             </div>
             <div class="col-xs-2">
-              <h3 class="text-center cell-header">Thirst</h3>
+              <h3 class="text-center cell-header">XP</h3>
             </div>
         </div>
         <div class="row">
-          <div class="col-xs-6">
-            <div class="row ability-row">
-              <div class="col-xs-4">
-                <label>Physical</label>
-              </div>
-              <div class="col-xs-8">
-                <div class="ability-box" contenteditable="true"></div>
-              </div>
-            </div>
-            <div class="row ability-row">
-              <div class="col-xs-4">
-                <label>Mental</label>
-              </div>
-              <div class="col-xs-8">
-                <div class="ability-box" contenteditable="true"></div>
-              </div>
-            </div>
-            <div class="row ability-row">
-              <div class="col-xs-4">
-                <label>Survival</label>
-              </div>
-              <div class="col-xs-8">
-                <div class="ability-box" contenteditable="true"></div>
-              </div>
-            </div>
-            <div class="row ability-row">
-              <div class="col-xs-4">
-                <label>Social</label>
-              </div>
-              <div class="col-xs-8">
-                <div class="ability-box" contenteditable="true"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-2 parent-height">
+          <div class="col-xs-4 parent-height">
             <div class="big-cell"></div>
           </div>
           <div class="col-xs-2 parent-height">
-            <div class="big-cell"></div>
+            <div class="big-cell">
+              <div class="max-row">10</div>
+            </div>
+          </div>
+          <div class="col-xs-2 parent-height">
+            <div class="big-cell">
+              <div class="max-row">10</div>
+            </div>
+          </div>
+          <div class="col-xs-2 parent-height">
+            <div class="big-cell">
+              <div class="max-row">10</div>
+            </div>
           </div>
           <div class="col-xs-2 parent-height">
             <div class="big-cell"></div>
@@ -139,133 +127,35 @@
             <h3>Skills</h3>
           </div>
           <div class="col-xs-6">
-            <h3>Injuries</h3>
+            <h3>Perks</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-5">
-              Name
+            Name
           </div>
           <div class="col-xs-1 no-left-pad text-center">
             Rank
           </div>
           <div class="col-xs-3">
-            Location
+            Name
           </div>
           <div class="col-xs-3">
             Effect
           </div>
         </div>
-        <div class="row">
-           <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
+        <div class="row" data-repeat="9">
+          <div class="col-xs-5 item-name no-right-pad">
+            <div class="cell"></div>
           </div>
           <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
+            <div class="cell"></div>
           </div>
           <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-         <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-           <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
+            <div class="cell"></div>
           </div>
           <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-         <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-           <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-         <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-           <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-         <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-           <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-         <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-           <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-         <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-           <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-         <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-           <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
-          </div>
-         <div class="col-xs-3 injury">
-          <div class="cell" contenteditable="true"></div>
+            <div class="cell"></div>
           </div>
         </div>
       </div>
@@ -292,180 +182,25 @@
             Qty
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-repeat="12">
           <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
+            <div class="cell"></div>
           </div>
           <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
+            <div class="cell"></div>
           </div>
           <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
+            <div class="cell"></div>
           </div>
           <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
+            <div class="cell"></div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-5 skill-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 skill-rank no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-5 skill-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 skill-rank no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-5 skill-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 skill-rank no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-5 skill-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 skill-rank no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-5 item-name no-right-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-          <div class="col-xs-1 item-qty no-left-pad">
-            <div class="cell" contenteditable="true"></div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-xs-12">
-            <h3>Notes</h3>
-            <div class="notes-box" contenteditable="true"></div>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Notes</h3>
+          <div class="notes-box" contenteditable="true"></div>
         </div>
       </div>
     </div>
@@ -473,11 +208,25 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
         <script>
-      $(".parent-height").each(function() {
-  var t = $(this);
-  var h = t.parent().css('height');
-  t.css('height', h).find('div').show();
-});
+          (function() {
+            $(".parent-height").each(function() {
+              var t = $(this);
+              var h = t.parent().css('height');
+              t.css('height', h).find('div').show();
+            });
+            $(".text-write, .cell").each(function() {
+              var t = $(this);
+              t.attr('contenteditable', true);
+            });
+            $("[data-repeat]").each(function() {
+              var t = $(this);
+              var nb = parseInt(t.data('repeat')) - 1;
+              var parent = t.parent();
+              for (var i = 0; i < nb; i++) {
+                parent.append(t.clone());
+              }
+            });
+          }());
     </script>
     <!-- <script src="content/libs/bootstrap/js/bootstrap.min.js"></script> -->
   </body>

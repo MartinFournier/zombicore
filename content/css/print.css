@@ -59,18 +59,17 @@ font-weight: bold;
     height: 160px;
     }
     .big-cell  {
-    
-    height: 100%;
-border: 1px solid rgba(0,0,0,0.75);
+      height: 100%;
+      border: 1px solid rgba(0,0,0,0.75);
     }
     
     .item-name .cell, .injury .cell{
-    line-height: 54px;
-font-size: 18px;
+      line-height: 54px;
+      font-size: 18px;
     }
     
     .item-qty .cell  {
-    text-align: center;
+      text-align: center;
     }
     
     .items  .cell, .skills-injuries  .cell, .injury .cell {
@@ -94,29 +93,45 @@ font-size: 18px;
     }
     
     .notes-box {
-    border: 1px solid rgba(0,0,0,0.75);
-    height: 200px;
+      border: 1px solid rgba(0,0,0,0.75);
+      height: 200px;
+    }
+    
+    .max-row {
+      height: 40px;
+      border-bottom: 3px double rgba(0,0,0,0.75);
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 38px;
     }
  
  
- @media print {
- .header h3 {
- font-size: 42px;
- margin-top: 0;
- 
- }
- .header {
- border-bottom: none !important;
- }
- }
+@media print {
+  .header h3 {
+    font-size: 42px;
+    margin-top: 0;
+  }
+  .header {
+    border-bottom: none !important;
+  }
+}
     
     
-    .small-caps .details  {
-    font-variant: normal;
-    }
-    
-    .logo-img {
-    height: 40px;
-position: relative;
-top: -2px;
-    }
+.small-caps .details  {
+  font-variant: normal;
+}
+  
+.logo-img {
+  height: 40px;
+  position: relative;
+  top: -2px;
+}
+
+.logo-img.margined {
+  margin-right: 10px;
+}
+
+h3.margined-bottom {
+  margin-bottom: 20px;
+}
