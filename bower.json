@@ -1,0 +1,20 @@
+{
+  "name": "zombicore",
+  "version": "0.0.0",
+  "homepage": "https://github.com/MartinFournier/zombicore",
+  "authors": [
+    "Martin Fournier <martin@mfournier.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/3rd",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}

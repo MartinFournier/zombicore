@@ -1,0 +1,25 @@
+{
+  "name": "zombicore",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "~3.8.8"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.8",
+    "browser-sync": "~1.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MartinFournier/zombicore.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/MartinFournier/zombicore/issues"
+  }
+}
