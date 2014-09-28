@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-xs-12">
             <h3 class="hidden-print">
-                Character Information
+                Character Information 
             </h3>
             <h3 class="visible-print margined-bottom">
                 <img src="app/img/favicon.png" class="logo-img margined" />
@@ -56,42 +56,52 @@
 <div class="abilities">
     <div class="row">
         <div class="col-xs-4">
-            <h3 class="text-center cell-header">Health & Injuries</h3>
+            <h3 class="text-center cell-header">Abilities</h3>
+        </div>
+        <div class="col-xs-2">
+            <h3 class="text-center cell-header">Condition</h3>
         </div>
         <div class="col-xs-2">
             <h3 class="text-center cell-header">Sanity</h3>
         </div>
         <div class="col-xs-2">
-            <h3 class="text-center cell-header">Thirst</h3>
-        </div>
-        <div class="col-xs-2">
             <h3 class="text-center cell-header">Hunger</h3>
         </div>
         <div class="col-xs-2">
-            <h3 class="text-center cell-header">XP</h3>
+            <h3 class="text-center cell-header">Thirst</h3>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-4 parent-height">
-            <div class="big-cell"></div>
+            <zc-abilities-table></zc-abilities-table>
         </div>
         <div class="col-xs-2 parent-height">
-            <div class="big-cell">
-                <div class="max-row">10</div>
-            </div>
+            <zc-count-table></zc-count-table>
         </div>
         <div class="col-xs-2 parent-height">
-            <div class="big-cell">
-                <div class="max-row">10</div>
-            </div>
+            <zc-count-table></zc-count-table>
         </div>
         <div class="col-xs-2 parent-height">
-            <div class="big-cell">
-                <div class="max-row">10</div>
-            </div>
+            <zc-count-table></zc-count-table>
         </div>
         <div class="col-xs-2 parent-height">
-            <div class="big-cell"></div>
+            <zc-count-table></zc-count-table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <h3 class="text-center cell-header">Experience</h3>
+        </div>
+        <div class="col-xs-8">
+            <h3 class="text-center cell-header">Injuries</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="basic-box"></div>
+        </div>
+        <div class="col-xs-8">
+            <div class="basic-box"></div>
         </div>
     </div>
 </div>
@@ -101,7 +111,7 @@
             <h3>Skills</h3>
         </div>
         <div class="col-xs-6">
-            <h3>Perks</h3>
+            <h3>Equipment</h3>
         </div>
     </div>
     <div class="row">
@@ -118,8 +128,8 @@
             Effect
         </div>
     </div>
-    <div class="row" data-repeat="9">
-        <div class="col-xs-5 item-name no-right-pad">
+    <div class="row" ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8, 9]">
+        <div class=" col-xs-5 item-name no-right-pad">
             <div class="cell"></div>
         </div>
         <div class="col-xs-1 item-qty no-left-pad">
@@ -139,7 +149,6 @@
             <h3>Items</h3>
         </div>
         <div class="col-xs-6">
-            <h3></h3>
         </div>
     </div>
     <div class="row">
@@ -156,7 +165,7 @@
             Qty
         </div>
     </div>
-    <div class="row" data-repeat="12">
+    <div class="row" ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]">
         <div class="col-xs-5 item-name no-right-pad">
             <div class="cell"></div>
         </div>

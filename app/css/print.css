@@ -1,132 +1,152 @@
-.text-write {
-  border-bottom: 1px solid rgba(0,0,0,0.75);
-  height: 20px;
+.basic-box {
+    height: 60px;
+    border: 1px solid rgba(0,0,0,0.75);
 }
 
-.text-write.center {
-  text-align:center;
+.count-table, .abilities-table {
+    border: 1px solid rgba(0,0,0,0.75);
+    width: 100%;
 }
+
+    .count-table tr, .abilities-table tr {
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+    }
+
+    .count-table tr:last-child, .abilities-table tr:last-child {
+        border-bottom: 1px solid rgba(0,0,0,0.75);
+    }
+
+    .count-table .number {
+        border-right: 3px double rgba(0,0,0,0.75);
+        width: 40%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 16px;
+        padding: 4px;
+    }
+
+    .count-table .field {
+        width: 60%;
+    }
+
+    .abilities-table .field {
+        width: 40%;
+    }
+
+    .abilities-table .ability {
+        width: 60%;
+        border-right: 3px double rgba(0,0,0,0.75);
+        padding: 4px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+.text-write {
+    border-bottom: 1px solid rgba(0,0,0,0.75);
+    height: 20px;
+    font-variant: normal;
+}
+
+    .text-write.center {
+        text-align: center;
+    }
 
 label.field-prepend {
-  display: block;
-  text-align:right;
-  font-size:12px;
-}    
-
-.main-infos, .abilities, .header h3, .items, .skills-injuries, .small-caps{
-  font-variant:small-caps;
-  color: rgba(0,0,0,0.75);
+    display: block;
+    text-align: right;
+    font-size: 12px;
 }
 
-.text-write {
-  font-variant: normal;
-}
-
-.abilities label {
-  font-size: 16px;
-  line-height: 34px;
-  text-align: center;
-  display: block;
-}
-
-.ability-box {
-height: 40px;
-text-align:center;
-font-variant: normal;
-border: 1px solid rgba(0,0,0,0.75);
-border-bottom-width: 0;
-font-size: 24px;
-padding: 3px;
-font-weight: bold;
+.main-infos, .abilities, .header h3, .items, .skills-injuries, .small-caps {
+    font-variant: small-caps;
+    color: rgba(0,0,0,0.75);
 }
 
 .skills-injuries {
-page-break-after:always
-}
-
-.abilities .ability-row:last-child .ability-box
-    {
-  border-bottom-width: 1px;
+    page-break-after: always;
 }
 
 .parent-height {
-  height: 160px;
-}
-.big-cell  {
-  height: 100%;
-  border: 1px solid rgba(0,0,0,0.75);
+    height: 160px;
 }
 
-.item-name .cell, .injury .cell{
-  line-height: 54px;
-  font-size: 18px;
+.item-name .cell, .injury .cell {
+    line-height: 54px;
+    font-size: 18px;
 }
 
-.item-qty .cell  {
-  text-align: center;
+.item-qty .cell {
+    text-align: center;
 }
 
-.items  .cell, .skills-injuries  .cell, .injury .cell {
-  height: 40px;
-  border-bottom: 1px solid rgba(0,0,0,0.75);
+.items .cell, .skills-injuries .cell, .injury .cell {
+    height: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.75);
 }
 
 .no-right-pad {
-  padding-right: 0;
+    padding-right: 0;
 }
 
 .no-left-pad {
-  padding-left: 0;
+    padding-left: 0;
 }
 
-.skill-rank  .cell, .item-qty  .cell{
-  border-left: 1px solid rgba(0,0,0,0.75);
-  margin-top: 20px;
-  height: 20px;
+.skill-rank .cell, .item-qty .cell {
+    border-left: 1px solid rgba(0,0,0,0.75);
+    margin-top: 20px;
+    height: 20px;
 }
 
 .notes-box {
-  border: 1px solid rgba(0,0,0,0.75);
-  height: 200px;
+    border: 1px solid rgba(0,0,0,0.75);
+    height: 200px;
 }
 
 .max-row {
-  height: 40px;
-  border-bottom: 3px double rgba(0,0,0,0.75);
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 38px;
+    height: 40px;
+    border-bottom: 3px double rgba(0,0,0,0.75);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 38px;
 }
 
- 
-@media print {
-  .header h3 {
-    font-size: 42px;
-    margin-top: 0;
-  }
-  .header {
-    border-bottom: none !important;
-  }
+
+.small-caps .details {
+    font-variant: normal;
 }
-    
-    
-.small-caps .details  {
-  font-variant: normal;
-}
-  
+
 .logo-img {
-  float: left;
-  height: 40px;
-  margin-right: 10px;
-  top: -2px;
-  margin-bottom: 10px;
+    float: left;
+    height: 40px;
+    margin-right: 10px;
+    top: -2px;
+    margin-bottom: 10px;
 }
 
-.logo-img.margined {
-  margin-right: 10px;
-}
+    .logo-img.margined {
+        margin-right: 10px;
+        height: 24px;
+    }
 
 h3.margined-bottom {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media print {
+    .header h3 {
+        font-size: 42px;
+        margin-top: 0;
+    }
+
+    .header {
+        border-bottom: none !important;
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
 }

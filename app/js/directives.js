@@ -22,3 +22,17 @@ zombicoreDirectives.directive('zcAnalytics', function () {
         restrict: 'E'
     }
 })
+
+zombicoreDirectives.directive('zcCountTable', function () {
+    return {
+        templateUrl: 'app/partials/count-table.html',
+        restrict: 'E'
+    }
+})
+
+zombicoreDirectives.directive('zcAbilitiesTable', function () {
+    return {
+        templateUrl: 'app/partials/abilities-table.html',
+        restrict: 'E'
+    }
+})
