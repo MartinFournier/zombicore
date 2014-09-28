@@ -1,0 +1,200 @@
+﻿<div class="main-infos">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 class="hidden-print">
+                Character Information
+            </h3>
+            <h3 class="visible-print margined-bottom">
+                <img src="app/img/favicon.png" class="logo-img margined" />
+                Zombicore Character Information
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2">
+            <label class="field-prepend">Character Name</label>
+        </div>
+        <div class="col-xs-6">
+            <div class="text-write"></div>
+        </div>
+        <div class="col-xs-2">
+            <label class="field-prepend">Age</label>
+        </div>
+        <div class="col-xs-2">
+            <div class="text-write center"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2">
+            <label class="field-prepend">Profession</label>
+        </div>
+        <div class="col-xs-6">
+            <div class="text-write"></div>
+        </div>
+        <div class="col-xs-2">
+            <label class="field-prepend">Height</label>
+        </div>
+        <div class="col-xs-2">
+            <div class="text-write center"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2">
+            <label class="field-prepend">Player</label>
+        </div>
+        <div class="col-xs-6">
+            <div class="text-write"></div>
+        </div>
+        <div class="col-xs-2">
+            <label class="field-prepend">Weight</label>
+        </div>
+        <div class="col-xs-2">
+            <div class="text-write center"></div>
+        </div>
+    </div>
+</div>
+<div class="abilities">
+    <div class="row">
+        <div class="col-xs-4">
+            <h3 class="text-center cell-header">Health & Injuries</h3>
+        </div>
+        <div class="col-xs-2">
+            <h3 class="text-center cell-header">Sanity</h3>
+        </div>
+        <div class="col-xs-2">
+            <h3 class="text-center cell-header">Thirst</h3>
+        </div>
+        <div class="col-xs-2">
+            <h3 class="text-center cell-header">Hunger</h3>
+        </div>
+        <div class="col-xs-2">
+            <h3 class="text-center cell-header">XP</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 parent-height">
+            <div class="big-cell"></div>
+        </div>
+        <div class="col-xs-2 parent-height">
+            <div class="big-cell">
+                <div class="max-row">10</div>
+            </div>
+        </div>
+        <div class="col-xs-2 parent-height">
+            <div class="big-cell">
+                <div class="max-row">10</div>
+            </div>
+        </div>
+        <div class="col-xs-2 parent-height">
+            <div class="big-cell">
+                <div class="max-row">10</div>
+            </div>
+        </div>
+        <div class="col-xs-2 parent-height">
+            <div class="big-cell"></div>
+        </div>
+    </div>
+</div>
+<div class="skills-injuries">
+    <div class="row">
+        <div class="col-xs-6">
+            <h3>Skills</h3>
+        </div>
+        <div class="col-xs-6">
+            <h3>Perks</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-5">
+            Name
+        </div>
+        <div class="col-xs-1 no-left-pad text-center">
+            Rank
+        </div>
+        <div class="col-xs-3">
+            Name
+        </div>
+        <div class="col-xs-3">
+            Effect
+        </div>
+    </div>
+    <div class="row" data-repeat="9">
+        <div class="col-xs-5 item-name no-right-pad">
+            <div class="cell"></div>
+        </div>
+        <div class="col-xs-1 item-qty no-left-pad">
+            <div class="cell"></div>
+        </div>
+        <div class="col-xs-3 injury">
+            <div class="cell"></div>
+        </div>
+        <div class="col-xs-3 injury">
+            <div class="cell"></div>
+        </div>
+    </div>
+</div>
+<div class="items">
+    <div class="row">
+        <div class="col-xs-6">
+            <h3>Items</h3>
+        </div>
+        <div class="col-xs-6">
+            <h3></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-5">
+            Name
+        </div>
+        <div class="col-xs-1 no-left-pad text-center">
+            Qty
+        </div>
+        <div class="col-xs-5">
+            Name
+        </div>
+        <div class="col-xs-1 no-left-pad text-center">
+            Qty
+        </div>
+    </div>
+    <div class="row" data-repeat="12">
+        <div class="col-xs-5 item-name no-right-pad">
+            <div class="cell"></div>
+        </div>
+        <div class="col-xs-1 item-qty no-left-pad">
+            <div class="cell"></div>
+        </div>
+        <div class="col-xs-5 item-name no-right-pad">
+            <div class="cell"></div>
+        </div>
+        <div class="col-xs-1 item-qty no-left-pad">
+            <div class="cell"></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h3>Notes</h3>
+        <div class="notes-box" contenteditable="true"></div>
+    </div>
+</div>
+    <script>
+    (function () {
+        $(".parent-height").each(function () {
+            var t = $(this);
+            var h = t.parent().css('height');
+            t.css('height', h).find('div').show();
+        });
+        $(".text-write, .cell").each(function () {
+            var t = $(this);
+            t.attr('contenteditable', true);
+        });
+        $("[data-repeat]").each(function () {
+            var t = $(this);
+            var nb = parseInt(t.data('repeat')) - 1;
+            var parent = t.parent();
+            for (var i = 0; i < nb; i++) {
+                parent.append(t.clone());
+            }
+        });
+    }());
+</script>

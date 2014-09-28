@@ -1,0 +1,14 @@
+﻿<div class="header no-border" ng-controller="HeaderCtrl">
+    <ul class="nav nav-pills pull-right">
+        <li ng-class="{ active: isActive('/')}">
+            <a href="#/"><span class="glyphicon glyphicon-info-sign"></span>Rules</a>
+        </li>
+        <li ng-class="{ active: isActive('/sheet')}">
+            <a href="#/sheet"><span class="glyphicon glyphicon-user"></span>Sheet</a>
+        </li>
+    </ul>
+    <img src="app/img/favicon.png" class="logo-img" />
+    <h3 class="text-muted hidden-xs">
+        <span>Zombicore: {{ title }}</span>
+    </h3>
+</div>
