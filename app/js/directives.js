@@ -18,14 +18,6 @@ zombicoreDirectives.directive('zcFooter', function () {
     }
 })
 
-zombicoreDirectives.directive('zcAnalytics', function () {
-    return {
-        templateUrl: 'app/partials/analytics.html',
-        restrict: 'E',
-        replace: true
-    }
-})
-
 zombicoreDirectives.directive('zcCountTable', function () {
     return {
         templateUrl: 'app/partials/count-table.html',
