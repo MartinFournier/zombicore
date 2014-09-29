@@ -8,6 +8,14 @@ zombicoreControllers.controller('RulesCtrl', ['$scope',
 
 zombicoreControllers.controller('SheetCtrl', ['$scope',
     function ($scope) {
+        $scope.abilities = ['Constitution', 'Agility', 'Intellect', 'Charisma'];
+
+        $scope.nbSkillRows = 9;
+        $scope.nbItemRows = 14;
+
+        $scope.range = function (n) {
+            return new Array(parseInt(n));
+        }
     }]);
 
 zombicoreControllers.controller('HeaderCtrl', ['$scope', '$location',

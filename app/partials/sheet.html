@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-xs-12">
             <h3 class="hidden-print">
-                Character Information 
+                Character Information
             </h3>
             <h3 class="visible-print margined-bottom">
                 <img src="app/img/favicon.png" class="logo-img margined" />
@@ -15,13 +15,13 @@
             <label class="field-prepend">Character Name</label>
         </div>
         <div class="col-xs-6">
-            <div class="text-write"></div>
+            <zc-editable></zc-editable>
         </div>
         <div class="col-xs-2">
             <label class="field-prepend">Age</label>
         </div>
         <div class="col-xs-2">
-            <div class="text-write center"></div>
+            <zc-editable class="center"></zc-editable>
         </div>
     </div>
     <div class="row">
@@ -29,13 +29,13 @@
             <label class="field-prepend">Profession</label>
         </div>
         <div class="col-xs-6">
-            <div class="text-write"></div>
+            <zc-editable></zc-editable>
         </div>
         <div class="col-xs-2">
             <label class="field-prepend">Height</label>
         </div>
         <div class="col-xs-2">
-            <div class="text-write center"></div>
+            <zc-editable class="center"></zc-editable>
         </div>
     </div>
     <div class="row">
@@ -43,13 +43,13 @@
             <label class="field-prepend">Player</label>
         </div>
         <div class="col-xs-6">
-            <div class="text-write"></div>
+            <zc-editable></zc-editable>
         </div>
         <div class="col-xs-2">
             <label class="field-prepend">Weight</label>
         </div>
         <div class="col-xs-2">
-            <div class="text-write center"></div>
+            <zc-editable class="center"></zc-editable>
         </div>
     </div>
 </div>
@@ -128,7 +128,7 @@
             Effect
         </div>
     </div>
-    <div class="row" ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8, 9]">
+    <div class="row" ng-repeat="i in range(nbSkillRows) track by $index">
         <div class=" col-xs-5 item-name no-right-pad">
             <div class="cell"></div>
         </div>
@@ -165,7 +165,7 @@
             Qty
         </div>
     </div>
-    <div class="row" ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]">
+    <div class="row" ng-repeat="i in range(nbItemRows) track by $index">
         <div class="col-xs-5 item-name no-right-pad">
             <div class="cell"></div>
         </div>
@@ -186,24 +186,3 @@
         <div class="notes-box" contenteditable="true"></div>
     </div>
 </div>
-    <script>
-    (function () {
-        $(".parent-height").each(function () {
-            var t = $(this);
-            var h = t.parent().css('height');
-            t.css('height', h).find('div').show();
-        });
-        $(".text-write, .cell").each(function () {
-            var t = $(this);
-            t.attr('contenteditable', true);
-        });
-        $("[data-repeat]").each(function () {
-            var t = $(this);
-            var nb = parseInt(t.data('repeat')) - 1;
-            var parent = t.parent();
-            for (var i = 0; i < nb; i++) {
-                parent.append(t.clone());
-            }
-        });
-    }());
-</script>

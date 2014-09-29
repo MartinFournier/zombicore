@@ -36,3 +36,11 @@ zombicoreDirectives.directive('zcAbilitiesTable', function () {
         restrict: 'E'
     }
 })
+
+zombicoreDirectives.directive('zcEditable', function () {
+    return {
+        template: "<div contenteditable='true' class='text-write'></div>",
+        restrict: 'E',
+        replace: true
+    }
+})
