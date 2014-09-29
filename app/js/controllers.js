@@ -12,17 +12,7 @@ zombicoreControllers.controller('RulesCtrl', ['$scope',
         }
 
         $scope.fumble = function (dc) {
-            if (dc === 0) {
-                return 0;
-            } else if (dc < 4) {
-                return 1;
-            } else if (dc < 7) {
-                return 2;
-            } else if (dc < 10) {
-                return 3;
-            } else {
-                return 4;
-            }
+            return Math.ceil(dc / 3);
         }
 
         $scope.rowClass = function (dc) {
