@@ -1,8 +1,40 @@
 ﻿<div class="jumbotron small-caps">
-    <h1><span>Character Creation</span></h1>
+    <h1><span>The Rules</span></h1>
     <p class="lead text-muted">&ndash;<em> One does not simply turn overnight.</em></p>
 </div>
 <div class="row marketing">
+    <div class="col-md-6">
+        <h2 class="small-caps">Basics</h2>
+        <p>
+            Most action are rolled with a standard dice (D6). 
+            The gamemaster determines a difficulty rating for most of the actions that you will do, ranging from 1 (super-easy) to 10 (impossible!).</p>
+    </div>
+    <div class="col-md-6">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Difficulty</th>
+                    <th>Fumble</th>
+                    <th>Success</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="dc in difficulties" class="{{ rowClass(dc) }}">
+                    <td>{{ dc }}</td>
+                    <td>{{ fumble(dc) }}</td>
+                    <td>{{ win(dc) }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-6">
+        <h2 class="small-caps">Abilities</h2>
+        <hr />
+        <p>There's four abilities. Each of them grant a straight up bonus to your</p>
+        <h3>Constitution</h3>
+            
+    </div>
+
     <div class="col-md-6">
         <h2 class="small-caps">Skills</h2>
         <p>
@@ -39,54 +71,7 @@
             <br />
             If you are shooting, you may take a -2 to your roll to hit a specific spot.
         </p>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Melee Roll</th>
-                    <th>Ranged Roll</th>
-                    <th>Location</th>
-                </tr>
-            </thead>
-            <tr>
-                <td>1-4</td>
-                <td>1</td>
-                <td>Head</td>
-            </tr>
-            <tr>
-                <td>5-10</td>
-                <td>2-10</td>
-                <td>Chest</td>
-            </tr>
-            <tr>
-                <td>11-12</td>
-                <td>11</td>
-                <td>Left Arms</td>
-            </tr>
-            <tr>
-                <td>13-14</td>
-                <td>12</td>
-                <td>Right Arms</td>
-            <tr>
-                <td>15-16</td>
-                <td>13-15</td>
-                <td>Left Legs</td>
-            </tr>
-            <tr>
-                <td>17-18</td>
-                <td>16-18</td>
-                <td>Right Legs</td>
-            </tr>
-            <tr>
-                <td>19</td>
-                <td>19</td>
-                <td>Hand</td>
-            </tr>
-            <tr>
-                <td>20</td>
-                <td>20</td>
-                <td>Foot</td>
-            </tr>
-        </table>
+        
     </div>
 
     <div class="col-md-6">

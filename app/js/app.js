@@ -12,12 +12,12 @@ zombicoreApp.config(['$routeProvider',
         when('/', {
             templateUrl: 'app/partials/rules.html',
             controller: 'RulesCtrl',
-            title: 'Rules'
+            title: 'The Rules'
         }).
         when('/sheet', {
             templateUrl: 'app/partials/sheet.html',
             controller: 'SheetCtrl',
-            title: 'Sheet'
+            title: 'Character Sheet'
         }).
         otherwise({
             redirectTo: '/'

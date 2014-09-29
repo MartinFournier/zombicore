@@ -83,3 +83,7 @@ body {
     margin-right: 5px;
     width: 14px;
 }
+
+.table>tbody>tr.impossible>td {
+    background-color: #fff;
+}

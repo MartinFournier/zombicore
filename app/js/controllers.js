@@ -4,6 +4,41 @@ var zombicoreControllers = angular.module('zombicore.controllers', []);
 
 zombicoreControllers.controller('RulesCtrl', ['$scope',
     function ($scope) {
+        $scope.difficulties = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        $scope.win = function (dc) {
+            if (dc === 0) return 2;
+            return dc + 1;
+        }
+
+        $scope.fumble = function (dc) {
+            if (dc === 0) {
+                return 0;
+            } else if (dc < 4) {
+                return 1;
+            } else if (dc < 7) {
+                return 2;
+            } else if (dc < 10) {
+                return 3;
+            } else {
+                return 4;
+            }
+        }
+
+        $scope.rowClass = function (dc) {
+            var fumble = $scope.fumble(dc);
+            if (fumble === 0) {
+                return 'active';
+            } else if (fumble === 1) {
+                return 'success';
+            } else if (fumble === 2) {
+                return 'warning';
+            } else if (fumble === 3) {
+                return 'danger';
+            } else {
+                return 'impossible';
+            }
+        }
     }]);
 
 zombicoreControllers.controller('SheetCtrl', ['$scope',

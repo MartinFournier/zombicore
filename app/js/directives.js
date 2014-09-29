@@ -12,28 +12,32 @@ zombicoreDirectives.directive('zcHeader', function () {
 zombicoreDirectives.directive('zcFooter', function () {
     return {
         templateUrl: 'app/partials/footer.html',
-        restrict: 'E'
+        restrict: 'E',
+        replace: true
     }
 })
 
 zombicoreDirectives.directive('zcAnalytics', function () {
     return {
         templateUrl: 'app/partials/analytics.html',
-        restrict: 'E'
+        restrict: 'E',
+        replace: true
     }
 })
 
 zombicoreDirectives.directive('zcCountTable', function () {
     return {
         templateUrl: 'app/partials/count-table.html',
-        restrict: 'E'
+        restrict: 'E',
+        replace: true
     }
 })
 
 zombicoreDirectives.directive('zcAbilitiesTable', function () {
     return {
         templateUrl: 'app/partials/abilities-table.html',
-        restrict: 'E'
+        restrict: 'E',
+        replace: true
     }
 })
 
