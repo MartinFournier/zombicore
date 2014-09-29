@@ -5,7 +5,8 @@ var zombicoreDirectives = angular.module('zombicore.directives', []);
 zombicoreDirectives.directive('zcHeader', function () {
     return {
         templateUrl: 'app/partials/header.html',
-        restrict: 'E'
+        restrict: 'E',
+        replace: true
     };
 });
 
